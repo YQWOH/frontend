@@ -1,0 +1,73 @@
+1. What is an API? 
+   API(Application Programming Interface) which is a set of rules and protocols that enable different software applications to communicate and interact with each other.
+   It defines the methods and data formats that applications can use to request and exchange information.
+
+2. What is REST?
+   REST (Representational State Transfer) is an architectural style and set of principles for designing networked applications and web services.
+   RESTful APIs can be accessed using common HTTP methods such as GET, POST, PUT, DELETE, and PATCH, which correspond to the CRUD (Create, Read, Update, Delete) operations commonly performed on data.
+
+3. What is the difference between REST and GraphQL?
+   i. GraphQL is an application layer server-side technology which is developed by Facebook for executing queries with existing data
+      whereas REST is a software architectural style that defines a set of constraints for creating Web services.
+
+   ii. GraphQL follows client-driven architecture whereas REST follows server-driven architecture.
+
+  iii. GraphQL can be organized in terms of a schema whereas REST can be arranged in terms of endpoints.
+
+
+4. What are dummy APIs? What are they used for?
+   Dummy APIs, also known as mock APIs or stub APIs, are simulated or fake APIs that mimic the behavior of real APIs without performing actual data retrieval or manipulation. 
+   They are used during the development, testing, and integration phases of software projects.
+
+5. What are the common HTTP methods used in APIs?
+   GET, POST, PUT, DELETE, PATCH
+
+6. Can you use POST method to update an existing resource? If yes, why? If no, why not?
+   Yes but no recommend as the concern for lack of safety.
+   POST requests are not safe, meaning they can have side effects on the server's state. 
+   Using POST to update a resource can lead to unexpected changes in the server's state, especially if the request is made multiple times.
+   And, since POST requests are typically used for creating new resources, using them to update an existing resource can result in overwriting data unintentionally. 
+   Instead, the PUT or PATCH methods should be used to update resources in a RESTful API.
+
+7. How do you test an API? What tools can you use to test an API?
+   We can test an API using Manual Testing, Unit Testing, Functional Testing, Performance Testing, Security Testing and so on.
+   We may use Insomnia or Postman to manual send the request and to check response whether return as expected.
+
+8. What are environment variables? How do you use them in Insomnia?
+   Environment variables are variables that hold values related to the environment in which an application or software is running. 
+   They provide a way to store configuration values or sensitive information that can be accessed by the application at runtime. 
+   We can use environment varialbes in insomnia: 
+   In Insomnia, we can create an environment to store a set of variables. 
+   Within the environment, we can add variables by specifying a name and value for each variable.
+   Once defined environment variables, we can use them within the requests. 
+ 
+9. The URL below is used to authorize a user to access the Spotify API.
+   https://accounts.spotify.com/authorize?client_id=6966c080a0dd4ff190b5c2ef2e13a964&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8080
+
+   i. There are three query parameters in the URL. What are the values of each parameter?
+      client_id        6966c080a0dd4ff190b5c2ef2e13a964
+      response_type    code
+      redirect_uri     http://localhost:8080
+
+
+ ii. What is %3A equivalent to?
+     The "%3A" in the URL is a URL-encoded representation of the colon ":" character. 
+
+ iii. What is %2F equivalent to?
+      The "%2F" in the URL is a URL-encoded representation of the forward slash "/" character.
+
+ iv. What is %20 equivalent to?
+     The "%20" in the URL is a URL-encoded representation of the space character.
+
+ v. In Insomnia, how do you manage the URL with query parameters? What do you do to make it easier to work with?
+    Request Builder: When creating or editing a request, you can use the Request Builder section in the Insomnia interface to define the URL and its query parameters. 
+                      In the URL field, we can specify the base URL, and in the Query Params section, we can add individual query parameters along with their values.
+    Environment Variables: Insomnia allows us to define environment variables to store and manage values that can be reused across requests.  
+    By utilizing the Request Builder and environment variables, we can conveniently manage and update the values of query parameters in the URLs. 
+      
+10. How do you add a Bearer token to requests in Insomnia?
+    Click on the Auth types in Insomnia and then select Bearer.
+    Click "ENABLED"
+    Input the token value into token.
+    Input "Bearer" into PREFIX.
+

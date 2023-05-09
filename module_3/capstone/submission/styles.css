@@ -1,0 +1,39 @@
+.color-1, .color-2, .color-3, .color-4 {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 10px 15px;
+}
+
+.color-1 {
+    background-color: red;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+}
+
+.color-2 {
+    background-color: blue;
+    height: 40px;
+}
+
+.color-3 {
+    background-color: green;
+    height: 40px;
+}
+
+.color-4 {
+    background-color: yellow;
+    height: 40px;
+    border-radius: 0 0 20px 20px;
+}
+
+.hex {
+    background-color: white;
+    border-radius: 6px;
+    padding: 2px 6px;
+    opacity: 0;
+}
+
+.hex:hover {
+    opacity: 1;
+    cursor: pointer;
+}

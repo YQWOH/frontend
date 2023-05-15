@@ -1,0 +1,23 @@
+$ cd Documents
+$ mkdir Project
+$ cd Project
+$ mkdir about contact gallery assets
+
+$ cd about
+$ touch me.html images.html
+
+$ cd .. && cd contact
+$ touch contact.html
+
+$ cd .. && cd gallery
+$ touch gallery.html
+
+$ cd .. && cd assets
+$ mkdir javascript css
+$cd javascript
+$ touch index.js timer.js navbar.js
+$ cd .. && cd css
+$ touch styles.css home.css contact.css gallery.scss
+
+$ cd ...
+$ touch README.md

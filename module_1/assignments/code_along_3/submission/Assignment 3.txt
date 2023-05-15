@@ -1,0 +1,11 @@
+$ cd Documents
+$ yarn init
+$ yarn add moment 
+$ yarn add lodash
+$ yarn add axios
+$ yarn add bcrypt 
+$ yarn add dotenv
+$ yarn add eslint
+$ yarn add nodemon 
+$ yarn add nodemailer
+

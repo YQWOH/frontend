@@ -34,7 +34,6 @@ export default {
   methods: {
     append(number) {
       if (
-        //this checks to ensure we can't add two symbols
         !this.currentNumber.match(/^[^a-zA-Z0-9]+$/) || 
         this.currentNumber.length !== 0
       ) {
@@ -47,9 +46,6 @@ export default {
     },
     convert(str) {
       let output;
-      // this if else statement is pretty long & hefty
-      // we can use a case/switch statement here
-      // however i kept it simple so it's easier to understand
       if (str.includes("+")) {
         output = Number(str.split("+")[0]) + Number(str.split("+")[1]);
       } else if (str.includes("-")) {
